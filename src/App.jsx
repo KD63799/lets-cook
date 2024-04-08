@@ -5,19 +5,27 @@ import Footer from './Component/Footer/Footer'
 import Search from './Component/Search'
 import './App.css'
 
-
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [isFavorite, setIsFavorite] = useState('');
+  const [favoriteRecipes, setFavoriteRecipes] = useState('');
+
+
+  const handleChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
   return (
     <>
-    <Navbar />
-    <main className="pt-2" >
-      <Search />
-    <MealCard />
-    </main>
-    <Footer />
+      <Navbar />
+      <main className="pt-3">
+        <Search searchTerm={searchTerm} handleChange={handleChange} />
+        <MealCard favoriteRecipes={favoriteRecipes} setFavoriteRecipes={setFavoriteRecipes} isFavorite={isFavorite} setIsFavorite={setIsFavorite} searchTerm={searchTerm} />
+      </main>
+      <Footer />
     </>
   )
 }
 
 export default App
+

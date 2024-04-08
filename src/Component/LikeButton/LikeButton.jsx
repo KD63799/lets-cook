@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
-function LikeButton() {
+function LikeButton({recipe}) {
   const [isLiked, setIsLiked] = useState(false);
 
   const handleLikeToggle = () => {
-    setIsLiked(!isLiked);
-    // Ajoutez ici le code pour traiter l'élément liké ou non liké
+    setIsLiked((prevIsLiked) => {
+      recipe.IsFavorite = !prevIsLiked;
+      return !prevIsLiked;
+    });
+    console.log(recipe);
   };
 
   return (
