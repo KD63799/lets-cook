@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [isFavorite, setIsFavorite] = useState('');
+  const [isFavorite, setIsFavorite] = useState(false);
   const [favoriteRecipes, setFavoriteRecipes] = useState('');
 
 
@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar />
       <main className="pt-3">
-        <Search searchTerm={searchTerm} handleChange={handleChange} />
+        <Search isFavorite={isFavorite} setIsFavorite={setIsFavorite} searchTerm={searchTerm} handleChange={handleChange} />
         <MealCard favoriteRecipes={favoriteRecipes} setFavoriteRecipes={setFavoriteRecipes} isFavorite={isFavorite} setIsFavorite={setIsFavorite} searchTerm={searchTerm} />
       </main>
       <Footer />

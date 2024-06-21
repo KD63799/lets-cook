@@ -1,7 +1,9 @@
+// Importations nécessaires : Fragment de React et plusieurs composants de Headless UI pour gérer l'interface utilisateur
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
+// Tableau contenant les informations de navigation pour le menu de la barre de navigation
 const navigation = [
   { name: 'Acceuil', href: '#', current: true },
   { name: 'Recettes', href: '#', current: false },
@@ -9,12 +11,15 @@ const navigation = [
   { name: 'Conseils de Cuisine', href: '#', current: false },
 ]
 
+// Fonction utilitaire pour filtrer les classes CSS en fonction de leur validité
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+// Composant Navbar pour la barre de navigation du site
 export default function Navbar() {
   return (
+        // Utilisation de Disclosure pour un menu déroulant accessible
     <Disclosure as="nav" className="white">
       {({ open }) => (
         <>
@@ -37,7 +42,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="\images\logo.svg"
+                    src="./src/assets/images/logo.svg"
                     alt="Let's cook"
                   />
                 </div>

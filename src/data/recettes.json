@@ -5,7 +5,7 @@
     "difficulty": 2,
     "category": "Burger",
     "description": "Un burger savoureux avec une touche classique. Ingrédients frais et un steak juteux pour une expérience culinaire inoubliable.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?burger",
+    "imageUrl": "/src/assets/images/burger.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -15,7 +15,7 @@
     "difficulty": 3,
     "category": "Tacos",
     "description": "Des tacos colorés et pleins de saveurs, avec une garniture riche et une sauce épicée maison.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?tacos",
+    "imageUrl": "/src/assets/images/tacos.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -25,7 +25,7 @@
     "difficulty": 2,
     "category": "Pizza",
     "description": "Une pizza simple mais élégante, avec de la mozzarella fraîche, des tomates et du basilic.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?pizza",
+    "imageUrl": "/src/assets/images/pizza-margherita.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -35,7 +35,7 @@
     "difficulty": 3,
     "category": "Pasta",
     "description": "Un plat classique italien avec des pâtes, une sauce crémeuse au fromage, des lardons et du poivre noir.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?pasta",
+    "imageUrl": "/src/assets/images/carbonara.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -45,7 +45,7 @@
     "difficulty": 1,
     "category": "Salad",
     "description": "Une salade légère et croquante avec des morceaux de poulet grillé, des croûtons et une vinaigrette César.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?salad",
+    "imageUrl": "/src/assets/images/cesar-salad.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -55,7 +55,7 @@
     "difficulty": 4,
     "category": "Chicken",
     "description": "Un poulet frais avec une sauce riche et une mélange de saveurs.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?roasted-chicken",
+    "imageUrl": "/src/assets/images/lemon-chicken.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -65,7 +65,7 @@
     "difficulty": 1,
     "category": "Vegan",
     "description": "Une soupe de tomate onctueuse et réconfortante, parfaite pour les soirées froides.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?tomato,soup",
+    "imageUrl": "/src/assets/images/tomato-soup.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -75,7 +75,7 @@
     "difficulty": 4,
     "category": "Sushis",
     "description": "Des sushis frais avec une sauce riche et un mélange de saveurs.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?sushi",
+    "imageUrl": "/src/assets/images/sushi.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -83,19 +83,19 @@
     "id": "recipe-09",
     "title": "Crêpes au Chocolat",
     "difficulty": 2,
-    "category": "Pancakes",
+    "category": "Crepes",
     "description": "Des crêpes douces et moelleuses avec une garniture riche en chocolat et des fruits frais.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?pancakes,chocolate",
+    "imageUrl": "/src/assets/images/crepe.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
   {
     "id": "recipe-10",
-    "title": "Glace au Chocolat",
+    "title": "Fondant au chocolat",
     "difficulty": 3,
-    "category": "Glace",
+    "category": "Cake",
     "description": "Un fondant riche et leger, avec une crème au chocolat et une mélange de fruits frais.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?icecream,Chocolate",
+    "imageUrl": "/src/assets/images/chocolate-cake.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -103,9 +103,9 @@
     "id": "recipe-11",
     "title": "Tiramisu",
     "difficulty": 4,
-    "category": "cake",
+    "category": "Cake",
     "description": "Un tiramisu au fromage frais, avec une crème au mascarpone et des mélanges de sucre et de fraïcheur.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?tiramisu",
+    "imageUrl": "/src/assets/images/tiramisu.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -115,7 +115,7 @@
     "difficulty": 2,
     "category": "Tarte",
     "description": "Une tarte au citron avec une crème au citron, une mélange de sucre et de fraïcheur.",
-    "imageUrl": "https://source.unsplash.com/1600x900/?lemon-cake",
+    "imageUrl": "/src/assets/images/lemon-cake.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   }

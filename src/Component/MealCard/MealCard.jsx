@@ -1,28 +1,47 @@
-import React from "react";
+// Importation des hooks useState et useEffect depuis React
 import { useState, useEffect } from "react";
+// Importation des données des recettes à partir du fichier JSON local
 import recipesData from "../../data/recettes.json";
+// Importation du composant LikeButton pour la gestion des likes
 import LikeButton from "../LikeButton/LikeButton";
 
+// Définition du composant MealCard pour afficher les cartes de recettes
 const MealCard = ({ searchTerm, isFavorite }) => {
-  
+  // Utilisation du hook useState pour maintenir la liste des recettes favorites
   const [favoriteRecipes, setFavoriteRecipes] = useState([]);
-  
+  // Initialisation de l'état des recettes avec les données importées
+  const [recipes, setRecipes] = useState(recipesData);
+
+  // Fonction pour filtrer et mettre à jour les recettes favorites
   const handleFavoriteRecipes = () => {
-    const updatedFavorites = recipesData.filter((recipe) => recipe.isFavorite);
+    const updatedFavorites = recipes.filter((recipe) => recipe.isFavorite);
     setFavoriteRecipes(updatedFavorites);
   };
 
-  const filteredRecipes = recipesData.filter((recipe) => {
-    const filteredFavorites = recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
-    return isFavorite? filteredFavorites && recipe.isLiked : filteredFavorites }
-  );
+  // Fonction pour basculer le statut de favori d'une recette spécifique par son ID
+  const handleLikeToggle = (id) => {
+    console.log("Mettre a jour le tableau", id);
+    setRecipes(
+      recipes.map((recipe) =>
+        recipe.id === id ? { ...recipe, fav: !recipe.fav } : recipe
+      )
+    );
+  };
 
+  // Filtrage des recettes selon le terme de recherche et le statut de favori
+  const filteredRecipes = recipes.filter((recipe) => {
+    const filteredFavorites = recipe.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    return isFavorite ? recipe.fav && filteredFavorites : filteredFavorites;
+  });
 
-
+  // Utilisation de useEffect pour appeler handleFavoriteRecipes au montage du composant
   useEffect(() => {
     handleFavoriteRecipes();
   }, []);
 
+  // Rendu des cartes de recette ou d'un message si aucune recette ne correspond à la recherche
   return (
     <section className="max-w-7xl mx-auto">
       <h1 className="text-center text-[#005430] my-2 text-3xl">
@@ -31,10 +50,13 @@ const MealCard = ({ searchTerm, isFavorite }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredRecipes.length === 0 ? (
           <div className="max-w-7xl">
-          <p className=" flex justify-center text-red-800">
-            Désolé, aucunes recettes ne correspond à votre recherche.
-            <img src="public\images\chef-hat-svgrepo-com (1).svg" alt="Chef Hat" />
-          </p>
+            <p className="text-4xl flex text-red-800">
+              Désolé, aucunes recettes ne correspond à votre recherche.
+              <img
+                src="./src/assets/images/chef-hat-svgrepo-com (1).svg"
+                alt="Chef Hat"
+              />
+            </p>
           </div>
         ) : (
           filteredRecipes.map((recipe) => (
@@ -46,7 +68,7 @@ const MealCard = ({ searchTerm, isFavorite }) => {
               <div className="relative">
                 <a href="#">
                   <img
-                    className="w-full"
+                    className="w-[384px] h-[300px] object-cover"
                     src={recipe.imageUrl}
                     alt={recipe.title}
                   />
@@ -75,14 +97,18 @@ const MealCard = ({ searchTerm, isFavorite }) => {
                   <a href="#">{recipe.title}</a>
                 </h2>
                 <div className="absolute top-30 right-0">
-                  <LikeButton recipe={recipe}></LikeButton>
+                  <LikeButton
+                    isFavorite={recipe.fav}
+                    recipe={recipe}
+                    handleLikeToggle={handleLikeToggle}
+                  ></LikeButton>
                 </div>
                 <p className="mb-2">
                   <u>Difficulté:</u>{" "}
                   {Array(recipe.difficulty).fill("⭐").join(" ")}
                 </p>
                 <p className="text-gray-700">{recipe.description}</p>
-                <p className=" mt-1 font-bold flex justify-end text-gray-900">
+                <p className="mt-1 font-bold flex justify-end text-gray-900">
                   Recipe By :
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -112,4 +138,5 @@ const MealCard = ({ searchTerm, isFavorite }) => {
   );
 };
 
+// Exportation par défaut du composant MealCard
 export default MealCard;
