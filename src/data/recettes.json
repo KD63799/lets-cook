@@ -5,7 +5,7 @@
     "difficulty": 2,
     "category": "Burger",
     "description": "Un burger savoureux avec une touche classique. Ingrédients frais et un steak juteux pour une expérience culinaire inoubliable.",
-    "imageUrl": "/src/assets/images/burger.jpg",
+    "imageUrl": "images/burger.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -15,7 +15,7 @@
     "difficulty": 3,
     "category": "Tacos",
     "description": "Des tacos colorés et pleins de saveurs, avec une garniture riche et une sauce épicée maison.",
-    "imageUrl": "/src/assets/images/tacos.jpg",
+    "imageUrl": "images/tacos.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -25,7 +25,7 @@
     "difficulty": 2,
     "category": "Pizza",
     "description": "Une pizza simple mais élégante, avec de la mozzarella fraîche, des tomates et du basilic.",
-    "imageUrl": "/src/assets/images/pizza-margherita.jpg",
+    "imageUrl": "images/pizza-margherita.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -35,7 +35,7 @@
     "difficulty": 3,
     "category": "Pasta",
     "description": "Un plat classique italien avec des pâtes, une sauce crémeuse au fromage, des lardons et du poivre noir.",
-    "imageUrl": "/src/assets/images/carbonara.jpg",
+    "imageUrl": "images/carbonara.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -45,7 +45,7 @@
     "difficulty": 1,
     "category": "Salad",
     "description": "Une salade légère et croquante avec des morceaux de poulet grillé, des croûtons et une vinaigrette César.",
-    "imageUrl": "/src/assets/images/cesar-salad.jpg",
+    "imageUrl": "images/cesar-salad.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -55,7 +55,7 @@
     "difficulty": 4,
     "category": "Chicken",
     "description": "Un poulet frais avec une sauce riche et une mélange de saveurs.",
-    "imageUrl": "/src/assets/images/lemon-chicken.jpg",
+    "imageUrl": "images/lemon-chicken.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -65,7 +65,7 @@
     "difficulty": 1,
     "category": "Vegan",
     "description": "Une soupe de tomate onctueuse et réconfortante, parfaite pour les soirées froides.",
-    "imageUrl": "/src/assets/images/tomato-soup.jpg",
+    "imageUrl": "images/tomato-soup.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -75,7 +75,7 @@
     "difficulty": 4,
     "category": "Sushis",
     "description": "Des sushis frais avec une sauce riche et un mélange de saveurs.",
-    "imageUrl": "/src/assets/images/sushi.jpg",
+    "imageUrl": "images/sushi.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -85,7 +85,7 @@
     "difficulty": 2,
     "category": "Crepes",
     "description": "Des crêpes douces et moelleuses avec une garniture riche en chocolat et des fruits frais.",
-    "imageUrl": "/src/assets/images/crepe.jpg",
+    "imageUrl": "images/crepe.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -95,7 +95,7 @@
     "difficulty": 3,
     "category": "Cake",
     "description": "Un fondant riche et leger, avec une crème au chocolat et une mélange de fruits frais.",
-    "imageUrl": "/src/assets/images/chocolate-cake.jpg",
+    "imageUrl": "images/chocolate-cake.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -105,7 +105,7 @@
     "difficulty": 4,
     "category": "Cake",
     "description": "Un tiramisu au fromage frais, avec une crème au mascarpone et des mélanges de sucre et de fraïcheur.",
-    "imageUrl": "/src/assets/images/tiramisu.jpg",
+    "imageUrl": "images/tiramisu.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   },
@@ -115,7 +115,7 @@
     "difficulty": 2,
     "category": "Tarte",
     "description": "Une tarte au citron avec une crème au citron, une mélange de sucre et de fraïcheur.",
-    "imageUrl": "/src/assets/images/lemon-cake.jpg",
+    "imageUrl": "images/lemon-cake.jpg",
     "date": "2024-02-22",
     "author": "john Doe"
   }
