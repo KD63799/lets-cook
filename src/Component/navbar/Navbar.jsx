@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import chefhat from '../../../public/images/logo.svg'
 
 // Tableau contenant les informations de navigation pour le menu de la barre de navigation
 const navigation = [
@@ -42,7 +43,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="./src/assets/images/logo.svg"
+                    src= {chefhat}
                     alt="Let's cook"
                   />
                 </div>
