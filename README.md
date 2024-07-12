@@ -19,7 +19,7 @@ Ce projet est une application web de recettes de cuisine qui permet aux utilisat
 Pour installer et lancer le projet localement, suivez les étapes ci-dessous :
 
 ```bash
-git clone https://github.com/votreusername/votrerepo.git
+git clone https://github.com/KD63799/lets-cook
 cd votrerepo
 npm install
 npm start
