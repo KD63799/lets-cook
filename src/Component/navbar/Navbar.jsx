@@ -6,7 +6,7 @@ import chefhat from '../../../public/images/logo.svg'
 
 // Tableau contenant les informations de navigation pour le menu de la barre de navigation
 const navigation = [
-  { name: 'Acceuil', href: '#', current: true },
+  { name: 'Accueil', href: '#', current: true },
   { name: 'Recettes', href: '#', current: false },
   { name: 'Catégories', href: '#', current: false },
   { name: 'Conseils de Cuisine', href: '#', current: false },
